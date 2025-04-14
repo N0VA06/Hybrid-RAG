@@ -1,8 +1,6 @@
-# Hybrid-RAG
-
-[![Hybrid RAG with AWS and Langchain - YouTube](https://img.youtube.com/vi/lc2oy-W-eoY/0.jpg)](https://youtu.be/lc2oy-W-eoY)
 
 # Hybrid RAG with AWS and Langchain
+[![Hybrid RAG with AWS and Langchain - YouTube](https://img.youtube.com/vi/lc2oy-W-eoY/0.jpg)](https://youtu.be/lc2oy-W-eoY)
 
 ## Inspiration
 My inspiration and encouragement to initiate and finish this project was when I lost a hackathon and could not finish creating a RAG system that was going to assist rural children in availing themselves of personalized education. The initial idea was to produce quizzes and learning materials based on the strengths and weaknesses of individual students. That experience compelled me to come up with a more comprehensive Hybrid RAG system that could be implemented in educational as well as business settings.
