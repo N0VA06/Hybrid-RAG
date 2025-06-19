@@ -386,10 +386,15 @@ def load_vector_store(store_name="faiss_index"):
 # Query Processing Functions
 def query_refinement(question, conversation_history=None):
     """Enhance user queries while preserving their meaning."""
-    llm = Bedrock(model_id="meta.llama3-8b-instruct-v1:0", client=bedrock, model_kwargs={
-        'max_gen_len': 512,
-        'temperature': 0.2
-    })
+    llm = Bedrock(
+        model_id="anthropic.claude-3-sonnet-20240229-v1:0",  # or "anthropic.claude-3-haiku-20240307-v1:0"
+        client=bedrock,
+        model_kwargs={
+            "max_tokens": 512,
+            "temperature": 0.2,
+            "anthropic_version": "bedrock-2023-05-31"
+        }
+    )
     
     history_context = ""
     if conversation_history and len(conversation_history) > 0:
